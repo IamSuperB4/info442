@@ -34,10 +34,10 @@ We aim to start the service locally, based in the University District, so that w
 
 To create a fun and dynamic environment, users will be led to a landing page which depicts the site as an “adventure” generator. The branding will use fun graphics of cityscapes, mountains, and maps to further add appeal to our platform. The landing page will utilize a nav bar at the top of the screen with a logo in the top left corner and page selections of “Adventure” (the current home/landing page) and “About Us”. The green arrow button will lead users to start the activity generator. 
 
-
 ![picture2](images/Picture2.png)
 
 First, users will be prompted to select how much time they will have to complete an activity. Each time frame will correspond to a specific number of activities that are based on approximate estimates an activity takes to complete (shown in the table below). 
+
 ![picture8](images/Picture8.png)
 
 
@@ -55,6 +55,7 @@ If a user had selected a time frame which allows for more than one category sele
 
 
 ![picture6](images/Picture6.png)
+
 From here a loading screen will be displayed as the site randomly matches a local business to each category selection.  The loading pages creates a sense of generation of an activity plan that is personalized for the user. 
 
 ![picture7](images/Picture7.png)
@@ -62,7 +63,7 @@ From here a loading screen will be displayed as the site randomly matches a loca
 The last screen will showcase an “adventure” catered to the user’s previous selections (time frame and category). Each activity card will display the local businesses name, website, phone number, and a google maps embed next to an image of their logo. From here users can share the adventure (stretch goal), return to the home page, or generate another adventure. 
 
 
-Works Cited
+**Works Cited**
 
 #AshevilleStrong. (2020). Retrieved April 22, 2020, from https://www.ashevillestrong.com/
 
