@@ -42,12 +42,15 @@ First, users will be prompted to select how much time they will have to complete
 
 
 ![picture3](images/Picture3.png)
+
 Users must select a time range in order for the next arrow button to become functional. This is a necessary step as it decides how many categories the user can pick afterwards. If they try to click the arrow prematurely, a “please select a time frame” message will pop up. Once they have done so, the time range will become highlighted and they can click the next arrow.
 
 ![picture4](images/Picture4.png)
+
 From here, users will be able to select a “category” of the type of activity they are interested in. These categories will include: eat, shop, play, beauty, read, and exercise. Each category will have a simple graphic above it which clearly conveys the types of businesses that are recommended. For example, a coat hanger for “shop.”
 
 ![picture5](images/Picture5.png)
+
 If a user had selected a time frame which allows for more than one category selection, they will be prompted to select another category before being able to move forward.  
 
 
@@ -55,6 +58,7 @@ If a user had selected a time frame which allows for more than one category sele
 From here a loading screen will be displayed as the site randomly matches a local business to each category selection.  The loading pages creates a sense of generation of an activity plan that is personalized for the user. 
 
 ![picture7](images/Picture7.png)
+
 The last screen will showcase an “adventure” catered to the user’s previous selections (time frame and category). Each activity card will display the local businesses name, website, phone number, and a google maps embed next to an image of their logo. From here users can share the adventure (stretch goal), return to the home page, or generate another adventure. 
 
 
