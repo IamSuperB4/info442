@@ -1,1 +1,36 @@
 
+# Problem
+
+Coronavirus (COVID-19) is one of the world's worst pandemics. While much about this virus is unknown, it is continuing to spread rapidly. The widespread outbreak has forced many countries to employ mass quarantines and international travel bans. In particular, social distancing has been used as a common means to slow the transmission. As a result, many individuals have been stuck at home unable to explore their cities. In particular, as students return to campus they are unsure of the activities and businesses that exist in their proximity.  Additionally, social distancing has not only affected our mental and physical health, but has also caused a global economic strain - specifically towards small-medium enterprises (SME). At restaurants, social distancing means little to no tables therefore we are not able to socialize.
+ 
+Businesses around the world are beginning to feel early impacts such as loss in sales and supply-chain disruptions, causing many to go out of business. Small businesses are facing a financial crisis as the aftermath of COVID-19 unfolds.With public reactions towards the virus along with government policies for social distancing, it is causing a slump in sales and forcing many businesses to close temporarily. Many SMEs are facing financial stress from being unable to pay employees’ salaries, rent, and loan payment (Bouey, 2020).
+ 
+With the unpredictable nature of the COVID-19 crisis, business owners enter a time of uncertainty as they transition from physical stores to virtual environments. However, local businesses that lack the expenses and expertise in creating an online presence suffer from the consequence of having to shut down their stores indefinitely. Without an outlet for revenue, business owners are forced to lay off many employees, contributing to the overall rise of unemployment rates. Whether they are local restaurants that can’t afford to keep their employees or community operations that rely on physical contribution to run, these local businesses are struggling tremendously to stay afloat during this trying time. With the prediction of a permanent loss of 15,000 local retail stores and depletion of 15 million jobs by the summer, this pandemic is causing permanent damage to local communities (Huddleston, 2020). 
+
+
+# Existing Solutions
+
+Currently, there are a variety of solutions aimed at trying to gather support for local businesses. One such movement, called AshevilleStrong, urges people to buy gift cards in Asheville to support the local businesses (#AshevilleStrong, 2020). Another campaign website, Support Local Or Else, aims to create a network where people can engage local businesses remotely in Charlotte, NC and Raleigh & Durham, NC. Business owners can submit their business online to the website, where it generates a list of all the businesses gathered in one place. Users can more conveniently view the deals provided by each business (SupportLocalOrElse, 2020). However, both of these solutions only target specific cities in the United States, and the Seattle area has yet to see a similar campaign. 
+ 
+Meanwhile, Groupon has long been providing advertising services for local businesses. The application allows users to see nearby deals from local businesses, view currently valid coupons, and filter searches by location, category, and more. Although Groupon provides a solution for the current problem faced by many local businesses, it collects a large portion of earnings, 50% per sale, from the businesses (Brown, 2020). During these times when money is hard to earn, Groupon may not be a feasible choice for small businesses that are already struggling financially. 
+ 
+The Seattle Medium incorporates a business director which categorizes local businesses and includes a brief description as well as location and operating hours of the business. This website is very informational and is used to help increase traffic for local businesses. However, the website itself is extremely hard to navigate and the businesses offered on this website are rather limited. Additionally, a major plus of this website is how they categorize businesses based on their “genre”. This allows users to better navigate through and find what they are looking for; whether they may be finding a massage parlor or a yummy restaurant to indulge at. 
+
+
+# Our Solution
+
+While there are a variety of solutions that provide support to local businesses, none of these existing solutions motivate individuals and students to do so. We believe technology can be used to bridge this currently expanding gap between local businesses and consumers. Our solution aims to raise awareness to SMEs by connecting those living nearby to them. Ultimately, we would like to create a website where these businesses can promote themselves to those living nearby in a fun and interactive way. 
+ 
+Our solution will recommend local businesses based on what someone is interested in and how much time they have to spare. An “activity generator” which recommends nearby local businesses. Our solution will accommodate many types of local businesses, such as retail stores, restaurants, beauty services, and more. Additionally, the solution will not take any percentage of the earnings made from the businesses, but simply serve as a platform to connect individuals with new stores around them. This platform can be used by students to discover new places as well as provide a new way to plan hangouts and dates. In the future, as the presence of our service grows, we hope to spread our platform both domestically and internationally. 
+ 
+The platform will be beneficial to both businesses and consumers. It will allow local businesses to grow an online presence, and it would provide local consumers an avenue to explore local businesses near them. Altruism is immensely motivating, simply because of how satisfying it can be. According to the National Center for Biotechnical Information, altruistic behaviour actually engages brain regions associated with reward processing (NCBI). As such, being able to support their favourite local businesses will be uplifting for consumers at this time not only because it will bring the community together, but also because it would be inherently rewarding. 
+ 
+We aim to start the service locally, based in the University District, so that we can utilize the sense of community and local pride to persuade consumers, specifically students, to support their local businesses. We hope that our service will help local SMEs stay competitive and thus financially empower their owners so that they are less vulnerable to the economic impacts of the pandemic. 
+
+# Design and Interaction Description
+
+![picture1](images/Picture1.png)
+
+To create a fun and dynamic environment, users will be led to a landing page which depicts the site as an “adventure” generator. The branding will use fun graphics of cityscapes, mountains, and maps to further add appeal to our platform. The landing page will utilize a nav bar at the top of the screen with a logo in the top left corner and page selections of “Adventure” (the current home/landing page) and “About Us”. The green arrow button will lead users to start the activity generator. 
+
+
