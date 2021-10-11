@@ -38,6 +38,7 @@ To create a fun and dynamic environment, users will be led to a landing page whi
 ![picture2](images/Picture2.png)
 
 First, users will be prompted to select how much time they will have to complete an activity. Each time frame will correspond to a specific number of activities that are based on approximate estimates an activity takes to complete (shown in the table below). 
+![picture8](images/Picture8.png)
 
 
 ![picture3](images/Picture3.png)
@@ -57,7 +58,19 @@ From here a loading screen will be displayed as the site randomly matches a loca
 The last screen will showcase an “adventure” catered to the user’s previous selections (time frame and category). Each activity card will display the local businesses name, website, phone number, and a google maps embed next to an image of their logo. From here users can share the adventure (stretch goal), return to the home page, or generate another adventure. 
 
 
-Sources:
+Works Cited
 
-[https://www.ashevillestrong.com/]
+#AshevilleStrong. (2020). Retrieved April 22, 2020, from https://www.ashevillestrong.com/
+Bouey, J. (2020, March 10). Assessment of COVID-19’s Impact on Small and Medium-Size Enterprises. Rand Corporation, Retrieved April 22, 2020 from https://www.rand.org/content/dam/rand/pubs/testimonies/CT500/CT524/RAND_CT524.pdf
+Brown, K. (2020, April 1). How to Advertise on Groupon in 2019: The Ultimate Guide. Retrieved April 22, 2020, from https://fitsmallbusiness.com/how-to-advertise-on-groupon/
+Fairlie, R. W. (2020, September). The impact of covid-19 on small business owners: The first three months after social-distancing restrictions. IZA. Retrieved October 11, 2021, from https://www.iza.org/publications/dp/13707/the-impact-of-covid-19-on-small-business-owners-the-first-three-months-after-social-distancing-restrictions.
+Filkowski, Megan M, et al. “Altruistic Behavior: Mapping Responses in the Brain.” Neuroscience and Neuroeconomics, U.S. National Library of Medicine, 2016, www.ncbi.nlm.nih.gov/pmc/articles/PMC5456281/.
+
+Huddleston, Tom. (2020, March 23). “How Small Business Owners Are Coping with COVID-19 Pandemic: 'It Was My Civic Duty to Be a Part of the Solution'.” CNBC, Retrieved April 22, 2020, from www.cnbc.com/2020/03/23/how-small-businesses-across-us-are-coping-with-covid-19-pandem	c.html.
+Korosec, K. (2020, March 16). Uber Eats waives delivery fees for independent restaurants during COVID-19 pandemic. TechCrunch. Retrieved April 22, 2020, from https://techcrunch.com/2020/03/16/uber-eats-waives-delivery-fees-for-independent-restaurants-during-covid-19-pandemic/
+SupportLocalOrElse. (2020). Retrieved April 22, 2020, from https://www.supportlocalorelse.com/
+
+
+
+
 
