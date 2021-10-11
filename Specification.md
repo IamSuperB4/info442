@@ -1,7 +1,7 @@
 
 # Problem
 
-Coronavirus (COVID-19) is one of the world's worst pandemics. While much about this virus is unknown, it is continuing to spread rapidly. The widespread outbreak has forced many countries to employ mass quarantines and international travel bans. In particular, social distancing has been used as a common means to slow the transmission. As a result, many individuals have been stuck at home unable to explore their cities. In particular, as students return to campus they are unsure of the activities and businesses that exist in their proximity.  Additionally, social distancing has not only affected our mental and physical health, but has also caused a global economic strain - specifically towards small-medium enterprises (SME). At restaurants, social distancing means little to no tables therefore we are not able to socialize.
+Coronavirus (COVID-19) is one of the world's worst pandemics. While much about this virus is unknown, it is continuing to spread rapidly. The widespread outbreak has forced many countries to employ mass quarantines and international travel bans. In particular, social distancing has been used as a common means to slow the transmission. As a result, many individuals have been stuck at home unable to explore their cities. In particular, as students return to campus they are unsure of the activities and businesses that exist in their proximity.  Additionally, social distancing has not only affected our mental and physical health, but has also caused a global economic strain - specifically towards small-medium enterprises (SME). In the United States during the first three months of the pandemic, the number of active business owners dropped by 3.3 million or over 22%. This was the largest ever drop recorded, and its impact was felt across almost all industries. African-American businesses experience the harshest drop with 41% drop in business activity, while Latinx dropped by 32%, and Asian businesses dropped by 26%. (Fairlie, 2020). At restaurants, social distancing means little to no tables therefore we are not able to socialize. 
  
 Businesses around the world are beginning to feel early impacts such as loss in sales and supply-chain disruptions, causing many to go out of business. Small businesses are facing a financial crisis as the aftermath of COVID-19 unfolds.With public reactions towards the virus along with government policies for social distancing, it is causing a slump in sales and forcing many businesses to close temporarily. Many SMEs are facing financial stress from being unable to pay employees’ salaries, rent, and loan payment (Bouey, 2020).
  
@@ -27,12 +27,12 @@ The platform will be beneficial to both businesses and consumers. It will allow 
  
 We aim to start the service locally, based in the University District, so that we can utilize the sense of community and local pride to persuade consumers, specifically students, to support their local businesses. We hope that our service will help local SMEs stay competitive and thus financially empower their owners so that they are less vulnerable to the economic impacts of the pandemic. 
 
+
 # Design and Interaction Description
 
 ![picture1](images/Picture1.png)
 
 To create a fun and dynamic environment, users will be led to a landing page which depicts the site as an “adventure” generator. The branding will use fun graphics of cityscapes, mountains, and maps to further add appeal to our platform. The landing page will utilize a nav bar at the top of the screen with a logo in the top left corner and page selections of “Adventure” (the current home/landing page) and “About Us”. The green arrow button will lead users to start the activity generator. 
-
 
 
 ![picture2](images/Picture2.png)
@@ -57,4 +57,7 @@ From here a loading screen will be displayed as the site randomly matches a loca
 The last screen will showcase an “adventure” catered to the user’s previous selections (time frame and category). Each activity card will display the local businesses name, website, phone number, and a google maps embed next to an image of their logo. From here users can share the adventure (stretch goal), return to the home page, or generate another adventure. 
 
 
+Sources:
+
+[https://www.ashevillestrong.com/]
 
