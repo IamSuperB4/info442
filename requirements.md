@@ -1,6 +1,6 @@
 # Functional Requirements by Page
 
-## A.Global Requierments
+## A. Global Requierments
 **Description:** These are the ‘global’ requirements which are present on every screen as a navigation bar located on the top of every page. 
 
 **A.1** A navigation bar will be on the top of every screen\
@@ -9,14 +9,14 @@
 **A.4** User will be able to click the “About Us” button on the navigation bar and be directed to the ”About Us”.\
 **A.5** *Alt text for images to promote accessibility (stretch goal).*
 
-## B.Landing Page 
+## B. Landing Page 
 
 **Description:** This is the first welcoming page that the user will be directed to once they enter our URL or click the logo icon in the upper left corner of the screen. 
 
 **B.1** Users should be able to click on the “Go on an Adventure” button and be directed to the ‘Stop Select’ page.\
 **B.2** Users should be able to click on the “Go to the Directory” button and be directed to the ‘Directory List’ page where they can explore various categories (restaurants, shops, etc).
 
-## C.Choose Number of Activities Page
+## C. Choose Number of Activities Page
 
 **Description:** This page allows the user to choose how many activities they would like to do. 
 
@@ -32,7 +32,7 @@
 
 **C.8** Users should be able to click on the green right pointed arrow located on the bottom right once a card has been chosen and be directed to the ‘category select’ page.
 
-## D.Category Select Pate
+## D. Category Select Pate
 
 **Description:** This page allows the user to choose the categories of activities users would like to participate in. 
 
@@ -46,7 +46,7 @@
 **D.8** Users should be able to click on the green right pointed arrow located on the bottom right once a card has been chosen and be directed to the ‘loading’ page where the adventure plan will be created. 
 
 
-## E.Your Adventure Page
+## E. Your Adventure Page
 
 **Description:** Shows the activities that the site has selected for the user.
 
@@ -57,7 +57,7 @@
 
 
 
-## F.Directory Page
+## F. Directory Page
 
 **Description:** This page contains the master list of all the activities organized by category of activity.
 
@@ -65,7 +65,7 @@
 **F.2** User will be shown a list of categories.\
 **F.3** User should be be able to click on a category, which will expand to show the activities related to that selected category.
 
-## G.About Us Page
+## G. About Us Page
 
 **Description:** This page contains information about our project and our team.
 
@@ -80,10 +80,8 @@
 **H.1** The application will be usable on all versions of Chrome, Firefox, Safari, and Edge browsers released in the last three years\
 **H.2** *The application will be useable on the iPhone Safari browser and Android Chrome browser (Stretch Goal)*
 
-## I.Security 
+## I. Security 
 **I.1** The software will maintain protection against SQL injection attacks by proper form handling. 
-
-
 
 # Stretch Goals 
 
