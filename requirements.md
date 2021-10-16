@@ -27,7 +27,9 @@
 **C.5** Until the user has selected at least one card, the right pointed arrow at the bottom right corner will be grayed out and not clickable.\
 **C.6** Once a card has been selected, user should be able to click on the green right pointed arrow located on the bottom right and be directed to the “Category Select” page.\
 **C.7** Users should not be able to click on the right pointing button located on the bottom right if a card has not been selected.\
-*Once a card is chosen…*\
+
+***Once a card is chosen…***\
+
 **C.8** Users should be able to click on the green right pointed arrow located on the bottom right once a card has been chosen and be directed to the ‘category select’ page.
 
 ## D.Category Select Pate
