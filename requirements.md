@@ -76,7 +76,7 @@
 **H.1** The application will be usable on all versions of Chrome, Firefox, Safari, and Edge browsers released in the last three years\
 
 ## I. Security 
-**I.1** The SQL database is be located in ....\
+**I.1** The SQL database will be located in ....\
 **I.2** The developers will have a secure username and password to access the database.
 # Stretch Goals 
 
