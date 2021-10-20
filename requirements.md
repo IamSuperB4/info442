@@ -24,13 +24,10 @@
 **C.2** Users should be able to select the card corresponding to the number of stops they want to make.\
 **C.3** When selected, the category cards will have a box shadow and have a green highlight to signal to the user it has been selected.\
 **C.4** Users should be able to click the left pointing arrow located on the bottom left and be directed back to the ‘landing’ page.\
-**C.5** Until the user has selected at least one card, the right pointed arrow at the bottom right corner will be grayed out and not clickable.\
+**C.5** When the user has selected at least one card, they should be able to click on the green right pointed arrow which will direct them to the "Category Select" page.\
+
 **C.6** Once a card has been selected, user should be able to click on the green right pointed arrow located on the bottom right and be directed to the “Category Select” page.\
-**C.7** Users should not be able to click on the right pointing button located on the bottom right if a card has not been selected.\
 
-***Once a card is chosen…***\
-
-**C.8** Users should be able to click on the green right pointed arrow located on the bottom right once a card has been chosen and be directed to the ‘category select’ page.
 
 ## D. Category Select Pate
 
@@ -61,9 +58,8 @@
 
 **Description:** This page contains the master list of all the activities organized by category of activity.
 
-**F.1** User should be able to scroll up and down to view different categories.\
-**F.2** User will be shown a list of categories.\
-**F.3** User should be be able to click on a category, which will expand to show the activities related to that selected category.
+**F.1** User will be shown a list of categories.\
+**F.2** User should be be able to click on a category, which will show the activities related to that selected category in a card list view format.
 
 ## G. About Us Page
 
@@ -78,11 +74,10 @@
 
 ## H. Usability
 **H.1** The application will be usable on all versions of Chrome, Firefox, Safari, and Edge browsers released in the last three years\
-**H.2** *The application will be useable on the iPhone Safari browser and Android Chrome browser (Stretch Goal)*
 
 ## I. Security 
-**I.1** The software will maintain protection against SQL injection attacks by proper form handling. 
-
+**I.1** The SQL database is be located in ....
+**I.2** The developers will have a secure username and password to access the database
 # Stretch Goals 
 
 These our a list of our stretch goals
