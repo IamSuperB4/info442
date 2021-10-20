@@ -84,4 +84,4 @@ These our a list of our stretch goals
 
 **A.5** Alt text for images to promote accessibility.\
 **E.4** Users should be able to click on the “address” which will direct them to google maps.\
-**G.3** Users can view a card for each team member that displays a headshot of the team member and short description.\
+**G.3** Users can view a card for each team member that displays a headshot of the team member and short description.
