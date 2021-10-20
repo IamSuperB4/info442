@@ -26,7 +26,7 @@
 **C.4** Users should be able to click the left pointing arrow located on the bottom left and be directed back to the ‘landing’ page.\
 **C.5** When the user has selected at least one card, they should be able to click on the green right pointed arrow which will direct them to the "Category Select" page.\
 
-**C.6** Once a card has been selected, user should be able to click on the green right pointed arrow located on the bottom right and be directed to the “Category Select” page.\
+**C.6** Once a card has been selected, user should be able to click on the green right pointed arrow located on the bottom right and be directed to the “Category Select” page.
 
 
 ## D. Category Select Pate
