@@ -59,7 +59,7 @@
 **Description:** This page contains the master list of all the activities organized by category of activity.
 
 **F.1** User will be shown a list of categories.\
-**F.2** User should be be able to click on a category, which will show the activities related to that selected category in a card list view format.
+**F.2** User should be be able to click on a category, which will show the activities related to that selected category in a card list view format.\
 
 ## G. About Us Page
 
@@ -76,8 +76,8 @@
 **H.1** The application will be usable on all versions of Chrome, Firefox, Safari, and Edge browsers released in the last three years\
 
 ## I. Security 
-**I.1** The SQL database is be located in ....
-**I.2** The developers will have a secure username and password to access the database
+**I.1** The SQL database is be located in ....\
+**I.2** The developers will have a secure username and password to access the database.\
 # Stretch Goals 
 
 These our a list of our stretch goals
@@ -85,5 +85,3 @@ These our a list of our stretch goals
 **A.5** Alt text for images to promote accessibility.\
 **E.4** Users should be able to click on the “address” which will direct them to google maps.\
 **G.3** Users can view a card for each team member that displays a headshot of the team member and short description.\
-**H.2** The application will be useable on the iPhone Safari browser and Android Chrome browser.
-
