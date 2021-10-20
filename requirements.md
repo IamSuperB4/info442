@@ -59,7 +59,7 @@
 **Description:** This page contains the master list of all the activities organized by category of activity.
 
 **F.1** User will be shown a list of categories.\
-**F.2** User should be be able to click on a category, which will show the activities related to that selected category in a card list view format.\
+**F.2** User should be be able to click on a category, which will show the activities related to that selected category in a card list view format.
 
 ## G. About Us Page
 
@@ -77,7 +77,7 @@
 
 ## I. Security 
 **I.1** The SQL database is be located in ....\
-**I.2** The developers will have a secure username and password to access the database.\
+**I.2** The developers will have a secure username and password to access the database.
 # Stretch Goals 
 
 These our a list of our stretch goals
