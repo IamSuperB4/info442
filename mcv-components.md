@@ -1,5 +1,5 @@
 # System Diagram
-
+![SystemsDiagram](images/SystemsDiagram.png)
 
 
 # Business Model: Components (Client-Side): 
@@ -29,10 +29,8 @@
 * Business Page
   * **Responsability:** Displays the information about the business. Shows the name of the business, phone number, street, Apt/Suite,city, state, zip code, short description, photo.
 
-
 # Controller Components (Client-Side)
 **Description:** We have pre-set HTML for each element of the adventure creator. Each adventure creation function will create a DOM element after each step of creating an adventure based on previously selected options.
-
 
 * DOM Element Controller
   * **Responsability:** Each step of the adventure creation process has a DOM element controller that adds the HTML to the page using the information from the previous steps.
