@@ -1,4 +1,4 @@
-**Manual Acceptance Testing**
+** ##Manual Acceptance Testing**
 
 The testing plan will utilize manual acceptance testing. Acceptance testing and inspections will be performed by the product designer after the requirements for each feature have been completed. In other words, once each pull request has been merged to complete a feature. If any defects, failures, or bugs are found while testing, the product designer will notify the dev working on the specific feature, and an issue will be created in GitHub. If for any reason, the Product Designer is unable to complete the test, the PM and dev team will work to test the completed feature.
 
