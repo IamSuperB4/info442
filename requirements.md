@@ -28,6 +28,7 @@
 
 **C.6** Once a card has been selected, user should be able to click on the green right pointed arrow located on the bottom right and be directed to the “Category Select” page.
 
+**C.7** Users should be able to deselect a card and choose a different card. 
 
 ## D. Category Select Pate
 
