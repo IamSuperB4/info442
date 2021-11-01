@@ -1,3 +1,14 @@
+## Coordination
+### Project management practices be?
+   1. Distribute features and assign milestones as a team
+   2. PM manages that the dev and designer are on track to meet assigned deadlines
+   3. Designer is responsible for testing communications 
+
+### Meeting agenda
+   * Meet outside of class if needed
+   * Meet during a discussed time from Monday-Thursday
+   * Utilize discord to discuss any questions or scheduling changes
+## Development Milestones
 ## Nov 7- Nav bar
    1. Create nav bar HTML and CSS
    1. Add Logo to nav bar
