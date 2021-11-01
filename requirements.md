@@ -34,9 +34,9 @@
 
 **Description:** This page allows the user to choose the categories of activities users would like to participate in. 
 
-**D.1** Users should be able to click the left pointing arrow located on the bottom left and be directed back to the ‘Stop select’ page. \
+**D.1** Users should be able to click the left pointing arrow located on the bottom left and be directed back to the ‘Choose number of activities’ page. \
 **D.2** Users should be prompted to select 1 or more of the category cards based on the stop card chosen in the ‘stop select’ page. (I.e. if user selected 2 activities in the stop select page, message will be displayed: “Please select up to 2 categories”).\
-**D.3** Users should be able to click on any category cards
+**D.3** Users should be able to click on any category cards.\
 **D.4** Users should be able to click up to as many cards as prompted.\
 **D.5** When selected, the category cards will have a box shadow and have a green highlight to signal to the user it has been selected.\
 **D.6** User should be able to deselect category cards that were previously selected by clicking on the card again.\
