@@ -67,7 +67,7 @@
    1. Create layout with exact measurements 
    1. Place static holders for theme elements
    
-  ## Nov 14-Designing the UI
+## Nov 14-Designing the UI
    3. Branding
    4. Creating website color palette 
    5. Typeface/font 
