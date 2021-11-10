@@ -167,3 +167,26 @@ function runAlert() {
     alert("Button clicked");
 }
 
+async function databaseTestAllBusinesses() {
+    let dbData = await getAllActivitiesFromDatabase();
+    
+    document.getElementById("databaseData").innerHTML = dbData;
+}
+
+async function databaseTestCategories() {
+    let categories = document.getElementById("inputText").value;
+    let categoriesArray = categories.split(',');
+
+    let dbData = await getSelectedCategoriesFromDatabase(categoriesArray);
+    
+    document.getElementById("databaseData").innerHTML = dbData;
+}
+
+async function databaseOneBusiness() {
+    let businessName = document.getElementById("inputText").value;
+
+    let dbData = await getBusinessFromDatabase(businessName);
+    
+    document.getElementById("databaseData").innerHTML = dbData;
+}
+

@@ -1,0 +1,13 @@
+{
+  "name": "uw-adventure",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "mongoose": "^6.0.12"
+  }
+}
