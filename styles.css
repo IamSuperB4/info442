@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 h2 { 
@@ -19,16 +19,15 @@ h2 {
 }
 
 /* Big container/Parent */
-.flex-container {
+.cards-flex-container {
     display: flex;
     margin-top: 40px;
-    background-color: rgb(246, 247, 248);
     align-items: center;
     justify-content: center;
 }
   
   /* Little container/Child */
-.flex-container > div {
+.cards-flex-container > div {
     background-color: #9794a7;
     margin: 30px;
     margin-left: 50px;
@@ -38,25 +37,30 @@ h2 {
     
 }
 
-.flex-container2 {
+.buttons-flex-container {
     display: flex;
     justify-content: space-between;
 }
-  
-.flex-container2 > div {
-    border-radius: 25px;
+
+.buttons-flex-container > button {
+    border-radius: 30px;
     background-color: #23da0b;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
+    color: black;
+    border: 2px solid #0040ff;
+    padding: 15px 22px;
+    margin-bottom: 200px;
 }
 
-#back-button {
+.buttons-flex-container > button:disabled {
+    background-color: gray; /* button background */
+    border: 2px solid gray;
+}
+
+.back-button {
     margin-left: 50px;
 }
 
-#next-button {
+.next-button {
     margin-right: 50px;
 }
 
@@ -66,6 +70,16 @@ h2 {
     width: auto;
 }
 
+.choose-mood {
+    margin-top: 200px;
+}
+
 .selected {
-box-shadow: 20px 20px;
+    border: 1px solid #23da0b;
+    border-width: 2px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.disable-div {
+    opacity: 0.5;
 }
