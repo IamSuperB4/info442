@@ -1,4 +1,6 @@
- function goToChooseActivites() {
+let numberOfActivities = 2;
+
+function goToChooseActivites() {
     // TODO: This function is triggered when the user clicks the Create Adventure button on the landing page
 	//  Loads the HTML of the "Choose number of activities" step
 }
