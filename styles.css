@@ -120,7 +120,16 @@ h2 {
 }
 
 .adventure-google-maps {
+    background-image: url("https://www.google.com/images/branding/product/2x/maps_96in128dp.png");
+    height: 200px;
+    width: 200px;
+    margin-bottom: 95px;
+}
+.adventure-google-maps > p {
+    margin-left: 80px;
     text-align: center;
+    position: absolute;
+    bottom: 10px;
 }
 
 .buttons-flex-container {
