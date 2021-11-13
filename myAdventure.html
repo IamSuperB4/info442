@@ -16,24 +16,28 @@
       <h1>Here is your Adventure!</h1> 
       
       <div id="adventure-flex-container" class="cards-flex-container">
-        <div>
-            <div id="first-activity-img" class='adventure-activity-card' style="width: 18rem;">
-                <img  src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" 
-                alt="Card image caption">
+          <div class="adventure-activity-card-container">
+            <p class="refresh-activity">Refresh</p>
+                <div class="adventure-activity-card">
+                    <div id="first-activity-img" class='adventure-activity-image' style="width: 18rem;">
+                        <img  src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" 
+                        alt="Card image caption">
+                    </div>
+                    <div class='adventure-activity-info'>
+                        <h4>Bob's Pizza</h4>
+                        <p>(206) 123-4567</p>
+                        <p>9000 5th Avenue, Seattle, WA, 98105</p>
+                    </div>
+                    <div id="first-activity-map" class='adventure-google-maps' style="width: 18rem;">
+                        <a href="https://google.com/maps">
+                            <img  src="https://www.google.com/images/branding/product/2x/maps_96in128dp.png" 
+                            alt="Google Maps Logo">
+                            Get Directions-&gt;
+                        </a>
             </div>
-            <div>
-                <h4>Bob's Pizza</h4>
-                <p>(206) 123-4567</p>
-                <p>9000 5th Avenue, Seattle, WA, 98105</p>
-            </div>
-            <div id="first-activity-img2" class='adventure-activity-card' style="width: 18rem;">
-                <img  src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" 
-                alt="Card image caption">
-            </div>
+          </div>
         </div>
       </div>
-
-      <button id="adventure-next-button" class="next-button" onclick="beginFinalAdventureCreation()" disabled >&gt;</button>
     </div>
 </body>
 

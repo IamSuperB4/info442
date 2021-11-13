@@ -9,7 +9,7 @@ main().catch(err => console.log(err));
 
 app.get('/', (req, res) => {
     res.type('html')
-    let htmlContents = fs.readFileSync("index.html").toString();
+    let htmlContents = fs.readFileSync("activities.html").toString();
     res.send(htmlContents)
   });
   
