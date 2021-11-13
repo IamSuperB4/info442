@@ -84,6 +84,7 @@ h2 {
     margin-left: 40px;
     margin-right: 40px;
     padding: 10px;
+    padding-top: 0px;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
@@ -92,7 +93,7 @@ h2 {
 }
 
 .adventure-activity-image {
-    margin-top: 5.5px;
+    margin-top: 5px;
     height: 220px;
     width: auto;
 }
@@ -100,7 +101,7 @@ h2 {
 .adventure-activity-image > img {
     margin-left: 6px;
     height: 75%;
-    width: 70%;
+    width: 60%;
 }
 
 .adventure-activity-info {
@@ -108,11 +109,19 @@ h2 {
     margin-right: 20px;
 }
 
+.business-name {
+    font-size: 28px;
+    text-align: left;
+}
+
+.phone-number, .address {
+    font-size: 20px;
+    text-align: left;
+}
+
 .adventure-google-maps {
     text-align: center;
 }
-
-
 
 .buttons-flex-container {
     display: flex;
@@ -145,16 +154,6 @@ h2 {
     margin-bottom: auto;
     height: auto;
     width: auto;
-}
-
-.business-name {
-    font-size: 40px;
-    text-align: left;
-}
-
-.phone-number, .address {
-    font-size: 30px;
-    text-align: left;
 }
 
 .choose-mood {
