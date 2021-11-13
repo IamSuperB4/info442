@@ -92,12 +92,14 @@ h2 {
 }
 
 .adventure-activity-image {
+    margin-top: 5.5px;
     height: 220px;
     width: auto;
 }
 
 .adventure-activity-image > img {
-    height: 85%;
+    margin-left: 6px;
+    height: 75%;
     width: 70%;
 }
 
