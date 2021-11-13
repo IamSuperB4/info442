@@ -73,9 +73,11 @@ h2 {
 }
 
 .refresh-activity {
+    position: absolute;
+    right:260px;
     text-align: right;
     margin-bottom: 0px;
-    width: 100%
+    font-size: 30px;
 }
 
 .adventure-activity-card {
@@ -89,7 +91,7 @@ h2 {
     justify-content: space-between;
     margin: 0 auto;
     position: relative;
-    height: 190px;
+    height: 240px;
 }
 
 .adventure-activity-image {
@@ -99,14 +101,15 @@ h2 {
 }
 
 .adventure-activity-image > img {
-    margin-left: 6px;
-    height: 75%;
-    width: 60%;
+    margin-left: 2px;
+    height: 79%;
+    width: 62%;
 }
 
 .adventure-activity-info {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 .business-name {
@@ -129,7 +132,8 @@ h2 {
     margin-left: 80px;
     text-align: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 26px;
+    color: white;
 }
 
 .buttons-flex-container {
