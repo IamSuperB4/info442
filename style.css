@@ -1,0 +1,68 @@
+.Logo img {
+    max-width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.nav-bar {
+    /* background-color:black(128, 125, 125); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-elements a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nav-elements a:hover {
+    color: gold;
+  }
+
+#nav-elements li{
+    padding: 1.5em;
+    margin-right: 0.5em;
+}
+
+.home-text{
+    margin-top: 10em;
+    margin-left: 18em;
+    padding-top: 1em;
+}
+
+.home-text h1{
+    color: white;
+    /* margin: 2em 3em; */
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#explore-campus-text{
+    color: white;
+    font-size: 2em;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: yellow;
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/uw-aerial-img.jpeg");
+    /* background */
+}
