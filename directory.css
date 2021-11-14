@@ -1,0 +1,55 @@
+body{
+    background-color: red;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.Logo img {
+    max-width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.nav-bar {
+    /* background-color:black(128, 125, 125); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-elements a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nav-elements a:hover {
+    color: gold;
+  }
+
+#nav-elements li{
+    padding: 1.5em;
+    margin-right: 0.5em;
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
