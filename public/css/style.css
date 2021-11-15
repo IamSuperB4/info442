@@ -1,5 +1,6 @@
 .Logo img {
-    max-width: 20%;
+    max-width: 10%;
+    max-height: 10%;
     padding: 1em;
     margin-left: 1em;
     margin-top: 1em;
@@ -63,6 +64,6 @@
 }
 
 body{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/uw-aerial-img.jpeg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/uw-aerial-img.jpeg");
     /* background */
 }
