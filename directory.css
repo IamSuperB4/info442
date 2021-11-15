@@ -1,0 +1,62 @@
+body{
+    /* background-image: url("images/uw-aerial-img.jpeg"); */
+    background-color: yellow;
+}
+
+.Logo img {
+    max-width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.nav-bar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-elements a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nav-elements a:hover {
+    color: gold;
+  }
+
+#nav-elements li{
+    padding: 1.5em;
+    margin-right: 0.5em;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.explore-categories {
+  padding: 0.8em 0.8em;
+  text-align: center;
+
+}

@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/uw-aerial-img.jpeg");
+}
+
+.Logo img {
+    max-width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.nav-bar {
+    /* background-color:black(128, 125, 125); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-elements a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nav-elements a:hover {
+    color: gold;
+  }
+
+#nav-elements li{
+    padding: 1.5em;
+    margin-right: 0.5em;
+}
+
+.about-us-cards-container {
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    gap: 5em 7em; /* row-gap column gap */
+}
+
+.card{
+    text-align: center;
+}
+
