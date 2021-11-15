@@ -160,6 +160,10 @@ function goToGoogleMaps(element) {
     window.open('https://google.com/maps/?q=' + address, '_blank');
 }
 
+function backToLandingPage() {
+    window.location.href = '/';
+}
+
 function wordToNumber(word) {
     if(word == 'one')
         return 1;
