@@ -8,61 +8,79 @@ let Business;
 main().catch(err => console.log(err));
 
 app.get('/', (req, res) => {
-    res.type('html');
-    let htmlContents = fs.readFileSync("activities.html").toString();
-    res.send(htmlContents);
-  });
-  
-  app.get('/styles.css', (req, res) => {
-      res.type('css');
-      let cssContents = fs.readFileSync("styles.css").toString();
-      res.send(cssContents);
-  });
-  
-  app.get('/script.js', (req, res) => {
-    res.type('js');
-    let jsContents = fs.readFileSync("script.js").toString();
-    res.send(jsContents);
-  });
-  
-  app.get('/DatabaseAccess.js', (req, res) => {
-    res.type('js')
-    let jsContents = fs.readFileSync("DatabaseAccess.js").toString();
-    res.send(jsContents)
-  });
-  
-  
-  app.get('/chooseMood', (req, res) => {
-    res.type('html');
-    let numberOfActivities = req.query.numberofactivities;
+  res.type('html');
+  let htmlContents = fs.readFileSync("index.html").toString();
+  res.send(htmlContents);
+});
 
-    let htmlContents = fs.readFileSync("chooseMood2.html").toString();
+app.get('/createadventure', (req, res) => {
+  res.type('html');
+  let htmlContents = fs.readFileSync("createadventure.html").toString();
+  res.send(htmlContents);
+});
 
-    htmlContents = htmlContents.replace("[numberOfActivities]", numberOfActivities);
-    htmlContents = htmlContents.replace("[plural]", (numberOfActivities > 1) ? "s" : "");
+app.get('/directory', (req, res) => {
+  res.type('html');
+  let htmlContents = fs.readFileSync("directory.html").toString();
+  res.send(htmlContents);
+});
 
-    res.send(htmlContents);
-  });
-  
-  
-  app.get('/adventure', async function(req, res, next) {
-    res.type('html');
-    let moods = req.query.moods.split(',');
-    let htmlContents = `<h1>Here is your Adventure!</h1> 
-      
-    <div id="adventure-flex-container" class="cards-flex-container">`;
+app.get('/aboutus', (req, res) => {
+  res.type('html');
+  let htmlContents = fs.readFileSync("aboutus.html").toString();
+  res.send(htmlContents);
+});
 
-    for(const mood of moods) {
-      console.log(mood);
-      let cardHtml = await createCard(mood);
-      htmlContents += cardHtml;
-    }
+app.get('/styles.css', (req, res) => {
+    res.type('css');
+    let cssContents = fs.readFileSync("styles.css").toString();
+    res.send(cssContents);
+});
 
-    htmlContents += "\n</div>"
+app.get('/script.js', (req, res) => {
+  res.type('js');
+  let jsContents = fs.readFileSync("script.js").toString();
+  res.send(jsContents);
+});
 
-    console.log("Sent HTML to website");
-    res.send(htmlContents);
-  });
+app.get('/DatabaseAccess.js', (req, res) => {
+  res.type('js')
+  let jsContents = fs.readFileSync("DatabaseAccess.js").toString();
+  res.send(jsContents)
+});
+
+
+app.get('/chooseMood', (req, res) => {
+  res.type('html');
+  let numberOfActivities = req.query.numberofactivities;
+
+  let htmlContents = fs.readFileSync("chooseMood2.html").toString();
+
+  htmlContents = htmlContents.replace("[numberOfActivities]", numberOfActivities);
+  htmlContents = htmlContents.replace("[plural]", (numberOfActivities > 1) ? "s" : "");
+
+  res.send(htmlContents);
+});
+
+
+app.get('/adventure', async function(req, res, next) {
+  res.type('html');
+  let moods = req.query.moods.split(',');
+  let htmlContents = `<h1>Here is your Adventure!</h1> 
+    
+  <div id="adventure-flex-container" class="cards-flex-container">`;
+
+  for(const mood of moods) {
+    console.log(mood);
+    let cardHtml = await createCard(mood);
+    htmlContents += cardHtml;
+  }
+
+  htmlContents += "\n</div>"
+
+  console.log("Sent HTML to website");
+  res.send(htmlContents);
+});
 
 async function createCard(mood) {
   let activityCardHtml = fs.readFileSync("adventureCard.html").toString();
