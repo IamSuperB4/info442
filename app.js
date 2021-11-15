@@ -15,6 +15,7 @@ let Business;
 main().catch(err => console.log(err));
 
 app.use("/images", express.static(path.join(__dirname, 'public/images')));
+app.use("/css/images", express.static(path.join(__dirname, 'public/images')));
 app.use("/html", express.static(path.join(__dirname, 'public/html')));
 app.use("/css", express.static(path.join(__dirname, 'public/css')));
 app.use("/js", express.static(path.join(__dirname, 'public/js')));

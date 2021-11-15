@@ -1,19 +1,18 @@
-body{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/uw-aerial-img.jpeg");
-}
-
 .Logo img {
-    max-width: 20%;
-    padding: 1em;
     margin-left: 1em;
-    margin-top: 1em;
+    margin-top: 1em; 
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
 }
 
 .nav-bar {
-    /* background-color:black(128, 125, 125); */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: grey;
+    padding-bottom: 0.6em;
 }
 
 #nav-elements a{
@@ -36,8 +35,13 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* align-content: space-around; */
-    gap: 5em 7em; /* row-gap column gap */
+    gap: 5em 7em;
+    background-color:darkgray;
+}
+.card-img-top{
+    width: 100%;
+    max-height: 80%;
+    object-fit: cover;
 }
 
 .card{
