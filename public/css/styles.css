@@ -207,7 +207,7 @@ h2 {
 
 .selected {
     border: 1px solid #23da0b;
-    border-width: 2px;
+    border-width: 5px;
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 

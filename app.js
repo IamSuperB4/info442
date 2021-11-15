@@ -2,10 +2,23 @@ import express from 'express';
 import mongoose from 'mongoose';
 import fs from "fs";
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import * as path from 'path'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 var app = express();
 let Business;
 
 main().catch(err => console.log(err));
+
+app.use("/images", express.static(path.join(__dirname, 'public/images')));
+app.use("/css/images", express.static(path.join(__dirname, 'public/images')));
+app.use("/html", express.static(path.join(__dirname, 'public/html')));
+app.use("/css", express.static(path.join(__dirname, 'public/css')));
+app.use("/js", express.static(path.join(__dirname, 'public/js')));
 
 app.get('/', (req, res) => {
   res.type('html');
@@ -15,19 +28,19 @@ app.get('/', (req, res) => {
 
 app.get('/createadventure', (req, res) => {
   res.type('html');
-  let htmlContents = fs.readFileSync("createadventure.html").toString();
+  let htmlContents = fs.readFileSync("public/html/createadventure.html").toString();
   res.send(htmlContents);
 });
 
 app.get('/directory', (req, res) => {
   res.type('html');
-  let htmlContents = fs.readFileSync("directory.html").toString();
+  let htmlContents = fs.readFileSync("public/html/directory.html").toString();
   res.send(htmlContents);
 });
 
-app.get('/aboutus', (req, res) => {
+app.get('/about-us', (req, res) => {
   res.type('html');
-  let htmlContents = fs.readFileSync("aboutus.html").toString();
+  let htmlContents = fs.readFileSync("public/html/about-us.html").toString();
   res.send(htmlContents);
 });
 
@@ -54,7 +67,7 @@ app.get('/chooseMood', (req, res) => {
   res.type('html');
   let numberOfActivities = req.query.numberofactivities;
 
-  let htmlContents = fs.readFileSync("chooseMood2.html").toString();
+  let htmlContents = fs.readFileSync("public/html/chooseMood2.html").toString();
 
   htmlContents = htmlContents.replace("[numberOfActivities]", numberOfActivities);
   htmlContents = htmlContents.replace("[plural]", (numberOfActivities > 1) ? "s" : "");
@@ -83,7 +96,7 @@ app.get('/adventure', async function(req, res, next) {
 });
 
 async function createCard(mood) {
-  let activityCardHtml = fs.readFileSync("adventureCard.html").toString();
+  let activityCardHtml = fs.readFileSync("public/html/adventureCard.html").toString();
 
   let businessData = await getRandomActivityFromMood(mood);
   businessData = JSON.parse(businessData);
