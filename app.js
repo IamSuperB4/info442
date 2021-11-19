@@ -84,14 +84,12 @@ app.get('/adventure', async function(req, res, next) {
   <div id="adventure-flex-container" class="cards-flex-container">`;
 
   for(const mood of moods) {
-    console.log(mood);
     let cardHtml = await createCard(mood);
     htmlContents += cardHtml;
   }
 
   htmlContents += "\n</div>"
 
-  console.log("Sent HTML to website");
   res.send(htmlContents);
 });
 
@@ -107,7 +105,6 @@ async function createCard(mood) {
   activityCardHtml = activityCardHtml.replace("[PhoneNumber]", businessData.Phone);
   activityCardHtml = activityCardHtml.replace("[Address]", businessData.Address);
 
-  console.log("Created Card HTML");
   return activityCardHtml;
 }
 
@@ -184,7 +181,7 @@ async function getRandomActivityFromMood(mood) {
     let business = JSON.stringify(
       businesses[Math.floor(Math.random() * (businesses.length))]
     );
-    console.log(business);
+    
     return business;
 };
 
@@ -209,5 +206,5 @@ function moodToCategories(mood) {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log('Example app listening at http://localhost:PORT')
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
