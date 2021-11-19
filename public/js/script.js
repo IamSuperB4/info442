@@ -40,10 +40,8 @@ function goToMoodSelect() {
         numberOfActivities = wordToNumber(selected);
     
         let newDiv = document.createElement('div');
-        newDiv.id = "choose-mood"
+        newDiv.id = "choose-mood";
         document.body.appendChild(newDiv);
-
-        let chooseMoodHTML = "";
 
         fetch("/chooseMood?numberofactivities=" + numberOfActivities)
             .then(response => response.text())
@@ -52,7 +50,7 @@ function goToMoodSelect() {
                 newDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
             })
             .catch(function(error) {
-                chooseMoodHTML = "There was an error: " + error;
+                newDiv.innerHTML = "There was an error: " + error;
                 console.log("Error");
             });
     }
@@ -113,7 +111,7 @@ function goToFinalAdventure(moods) {
     newDiv.id = "adventure";
     document.body.appendChild(newDiv);
 
-    let moodsParameters = moods.join()
+    let moodsParameters = moods.join();
 
     fetch("/adventure?moods=" + moodsParameters)
         .then(response => response.text())
@@ -127,11 +125,20 @@ function goToFinalAdventure(moods) {
         });
 }
  
-function refreshRandomActivity(category) {
-	// TODO:
-	// This function is triggered when a user presses the refresh button on one of the activities on their adventure
-	// It will go to the database to get a new activity from the same category
-	// Once the new activity is extracted from the database, a new DOM object will be created to replace the old activity with the new activity data
+function refreshRandomActivity(element) {
+    let mood = element.id;
+    let parent = element.parentNode;
+    let cardContainerDiv = parent.parentNode;
+    parent.remove();
+
+    fetch("/newadventurecard?mood=" + mood)
+        .then(response => response.text())
+        .then(function(responseText) {
+            cardContainerDiv.innerHTML += responseText;
+        })
+        .catch(function(error) {
+            console.log("Error");
+        });
 }
  
 function directoryCategorySelected() {
@@ -150,6 +157,7 @@ function removeMoodSelectionDiv() {
 
     document.getElementById('activities-back-button').disabled = false;
     document.getElementById('activities-next-button').disabled = false;
+
     delay(500).then(() =>  {
         moodElement.remove();
     });
