@@ -7,9 +7,9 @@
         <title>Local Adventure</title>
         <link href="css/directory.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <script src="js/directory.js"></script>
     </head>
-    <body>
+    <body onload="createDirectory()">
         <!-- Nav bar -->
         <nav class = "nav-bar">
             <ul class = "nav justify-content-start" id="logo">
@@ -27,34 +27,38 @@
                 </li>
             </ul>
         </nav>
-
+        <!-- End of Nav bar -->
+        
         <h1 class="explore-categories">Explore Categories</h1>
 
-        <button type="button" class="collapsible">Restaurants</button>
-        <div class="content">
-            <p>Noodle Nation</p>
-            <p>Village Sushi</p>
-            <p>Cedars Restaurant</p>
-            <p>MOD Pizza</p>
-            <p>Aladdin Falafel Corner</p>
-        </div>
-
-        <button type="button" class="collapsible">Cafés</button>
-        <div class="content">
-            <p>Cafe on the Ave</p>
-            <p>Sip House</p>
-            <p>Cafe Solstice</p>
-            <p>Cafe Allegro</p>
-        </div>
-
-        <button type="button" class="collapsible">Shops</button>
-        <div class="content">
-            <p>Lucky Dog on the Ave</p>
-            <p>Red Light Vintage and Costume</p>
-            <p>Urban Outfitters</p>
-            <p>Crossroads Trading</p>
-        </div>
+        <button id="auto" type="button" class="collapsible">Auto</button>
+        <div id="auto-content"class="content"></div>
+        <button id="bank" type="button" class="collapsible">Bank</button>
+        <div id="bank-content"class="content"></div>
+        <button id="beauty" type="button" class="collapsible">Beauty</button>
+        <div id="beauty-content"class="content"></div>
+        <button id="cafe" type="button" class="collapsible">Cafe</button>
+        <div id="cafe-content"class="content"></div>
+        <button id="deli" type="button" class="collapsible">Deli</button>
+        <div id="deli-content"class="content"></div>
+        <button id="design" type="button" class="collapsible">Design</button>
+        <div id="design-content"class="content"></div>
+        <button id="education" type="button" class="collapsible">Education</button>
+        <div id="education-content"class="content"></div>
+        <button id="entertainment" type="button" class="collapsible">Entertainment</button>
+        <div id="entertainment-content"class="content"></div>
+        <button id="health" type="button" class="collapsible">Health</button>
+        <div id="health-content"class="content"></div>
+        <button id="healthcare" type="button" class="collapsible">Healthcare</button>
+        <div id="healthcare-content"class="content"></div>
+        <button id="pub" type="button" class="collapsible">Pub</button>
+        <div id="pub-content"class="content"></div>
+        <button id="restaurant" type="button" class="collapsible">Restaurant</button>
+        <div id="restaurant-content"class="content"></div>
+        <button id="retail" type="button" class="collapsible">Retail</button>
+        <div id="retail-content"class="content"></div>
+        <button id="tech" type="button" class="collapsible">Tech</button>
+        <div id="tech-content"class="content"></div>
 
     </body>
-    <script src="js/directory.js"></script>
 </html>

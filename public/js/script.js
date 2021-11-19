@@ -110,7 +110,7 @@ function goToLoadingPage() {
  
 function goToFinalAdventure(moods) {
     let newDiv = document.createElement('div');
-    newDiv.id = "adventure"
+    newDiv.id = "adventure";
     document.body.appendChild(newDiv);
 
     let moodsParameters = moods.join()
