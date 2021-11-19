@@ -99,8 +99,7 @@ async function createCard(mood) {
   let businessData = await getRandomActivityFromMood(mood);
   businessData = JSON.parse(businessData);
   
-  //activitiyCardHtml = activitiyCardHtml.replace("imageUrl", "images/" + dbBusiness.Category);
-  activityCardHtml = activityCardHtml.replace("[imageUrl]", "https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80");
+  activityCardHtml = activityCardHtml.replace("[imageUrl]", "images/moods/" + businessData.Mood.toLowerCase() + ".png");
   activityCardHtml = activityCardHtml.replace("[BusinessName]", businessData.OrganizationName);
   activityCardHtml = activityCardHtml.replace("[PhoneNumber]", businessData.Phone);
   activityCardHtml = activityCardHtml.replace("[Address]", businessData.Address);
@@ -173,6 +172,7 @@ async function getRandomActivityFromMood(mood) {
             businessData.Phone = dbBusiness.Phone.trim();
             businessData.Type = dbBusiness.Type.trim();
             businessData.Category = dbBusiness.Category.trim();
+            businessData.Mood = mood;
 
             businesses.push(businessData);
         }
