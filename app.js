@@ -93,6 +93,15 @@ app.get('/adventure', async function(req, res, next) {
   res.send(htmlContents);
 });
 
+app.get('/newadventurecard', async function(req, res, next) {
+  res.type('html');
+  let mood = req.query.mood;
+  
+  let cardHtml = await createCard(mood);
+
+  res.send(cardHtml);
+});
+
 async function createCard(mood) {
   let activityCardHtml = fs.readFileSync("public/html/adventureCard.html").toString();
 
@@ -100,6 +109,7 @@ async function createCard(mood) {
   businessData = JSON.parse(businessData);
   
   activityCardHtml = activityCardHtml.replace("[imageUrl]", "images/moods/" + businessData.Mood.toLowerCase() + ".png");
+  activityCardHtml = activityCardHtml.replace("[Mood]", businessData.Mood.toLowerCase());
   activityCardHtml = activityCardHtml.replace("[BusinessName]", businessData.OrganizationName);
   activityCardHtml = activityCardHtml.replace("[PhoneNumber]", businessData.Phone);
   activityCardHtml = activityCardHtml.replace("[Address]", businessData.Address);
