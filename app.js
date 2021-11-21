@@ -88,7 +88,11 @@ app.get('/adventure', async function(req, res, next) {
     htmlContents += cardHtml;
   }
 
-  htmlContents += "\n</div>"
+  htmlContents += `</div>
+  
+  <a href="/createadventure">
+    <button id="create-new-adventure-button">Create New Adventure!</button>
+  </a>`
 
   res.send(htmlContents);
 });
