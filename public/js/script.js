@@ -1,8 +1,12 @@
 let numberOfActivities = 0;
 
-function goToChooseActivites() {
-    // TODO: This function is triggered when the user clicks the Create Adventure button on the landing page
-	//  Loads the HTML of the "Choose number of activities" step
+// Function is necessary because when you refresh the page after the 
+// I'm guessing it starts scrolling before images can be loaded in, which add height to the div
+// A slight delay to let new elements load fixed this issue
+function onLoad() {
+    delay(20).then(() =>  {
+        window.scrollTo(0, 0);
+    });
 }
  
 function activityCountSelected(element) {
@@ -17,6 +21,7 @@ function activityCountSelected(element) {
     
         document.getElementById('activities-next-button').disabled = false;
     }
+    
 }
  
 function goToMoodSelect() {
@@ -47,7 +52,13 @@ function goToMoodSelect() {
             .then(response => response.text())
             .then(function(responseText) {
                 newDiv.innerHTML = responseText;
-                newDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Delay was necessary because it will not scroll all the way to the next div without it
+                // I'm guessing it starts scrolling before images can be loaded in, which add height to the div
+                // A slight delay to let new elements load fixed this issue
+                delay(10).then(() =>  {
+                    newDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
             })
             .catch(function(error) {
                 newDiv.innerHTML = "There was an error: " + error;
@@ -101,8 +112,18 @@ function goToLoadingPage() {
                 selectedMoods.push(cards[i].id);
             }
         }
-    
-        goToFinalAdventure(selectedMoods);
+
+        let newDiv = document.createElement('div');
+        newDiv.id = "loading-page";
+        document.body.appendChild(newDiv);
+        let newImg = document.createElement('img');
+        newImg.src = 'images/loading_img-01.png';
+        newDiv.appendChild(newImg)
+        newDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        delay(3000).then(() =>  {
+            goToFinalAdventure(selectedMoods);
+        });
     }
 }
  

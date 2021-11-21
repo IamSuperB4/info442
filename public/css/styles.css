@@ -1,6 +1,48 @@
 /*
  *
  *
+    Nav Bar
+ *
+ *
+ */
+.Logo img {
+    margin-left: 1em;
+    margin-top: 1em; 
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 250px;
+}
+
+.nav-bar {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    position: fixed;
+    width: 100%;
+    background: gray;
+}
+
+#nav-elements a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    float: right;
+}
+
+#nav-elements a:hover {
+    color: gold;
+}
+
+#nav-elements li {
+    margin-right: 0.5em;
+}
+
+/*
+ *
+ *
     Choose Number of Activities Page
  *
  *
@@ -94,6 +136,22 @@
 /*
  *
  *
+    Loading Page
+ *
+ *
+ */
+#loading-page {
+    width: 100%;
+    height: 100%;
+}
+
+#loading-page > img {
+    width: 100%;
+    height: 100%;
+}
+/*
+ *
+ *
     Final Adventure Page
  *
  *
@@ -183,6 +241,7 @@
  */
 
 h1 {
+    padding-top: 72px;
     text-align: center;
 }
 
