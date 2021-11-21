@@ -11,7 +11,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body>
+<body onload="onLoad()">
+    <!-- Nav bar -->
+    <nav class = "nav-bar">
+        <ul class = "nav justify-content-start" id="logo">
+            <li class="Logo">
+                <a href="/"><img src="images/main-logo.png" alt="Logo"></a>
+            </li>
+        </ul>
+
+        <ul class="nav justify-content-end" id="nav-elements">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about-us">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=/directory>DIRECTORY</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of Nav bar -->
     <div id="choose-number-of-activities">
         <h1>How many stops do you want to make?</h1> 
         <h2>* Please select an option *</h2>
