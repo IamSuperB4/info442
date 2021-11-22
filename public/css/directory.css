@@ -18,6 +18,9 @@ button {
   max-width: 250px;
 }
 
+body{
+  
+}
 .nav-bar {
   z-index: 2;
   display: flex;
