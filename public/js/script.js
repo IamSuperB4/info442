@@ -56,7 +56,7 @@ function goToMoodSelect() {
                 // Delay was necessary because it will not scroll all the way to the next div without it
                 // I'm guessing it starts scrolling before images can be loaded in, which add height to the div
                 // A slight delay to let new elements load fixed this issue
-                delay(50).then(() =>  {
+                delay(200).then(() =>  {
                     newDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
             })
