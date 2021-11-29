@@ -84,7 +84,11 @@ app.get('/adventure', async function(req, res, next) {
   <div id="adventure-flex-container" class="cards-flex-container">`;
 
   for(const mood of moods) {
-    let cardHtml = await createCard(mood);
+    let businessData = await getRandomActivityFromMood(mood, "");
+    businessData = JSON.parse(businessData);
+
+    let cardHtml = await createCard(businessData);
+
     htmlContents += ` <div class="adventure-activity-card-container">
     ${cardHtml}
     </div>`;
@@ -102,17 +106,33 @@ app.get('/adventure', async function(req, res, next) {
 app.get('/newadventurecard', async function(req, res, next) {
   res.type('html');
   let mood = req.query.mood;
+  let oldBusiness = req.query.oldBusiness;
+
   
-  let cardHtml = await createCard(mood);
+  let categories = moodToCategories(mood);
+  let dbBusinesses = await Business.find().where('Type').in(categories).exec(); // get all businesses
+  let cardHtml;
+
+  if(dbBusinesses.length == 1) {
+    let businessData = await getRandomActivityFromMood(mood);
+    businessData = JSON.parse(businessData, "");
+
+    cardHtml = await createCard(businessData);
+    cardHtml += "<p>No replacement available</p>";
+  }
+  else {
+    let businessData = await getRandomActivityFromMood(mood, oldBusiness);
+    businessData = JSON.parse(businessData);
+
+    cardHtml = await createCard(businessData);
+  }
+  
 
   res.send(cardHtml);
 });
 
-async function createCard(mood) {
+async function createCard(businessData) {
   let activityCardHtml = fs.readFileSync("public/html/adventureCard.html").toString();
-
-  let businessData = await getRandomActivityFromMood(mood);
-  businessData = JSON.parse(businessData);
   
   activityCardHtml = activityCardHtml.replace("[imageUrl]", "images/moods/" + businessData.Mood.toLowerCase() + ".png");
   activityCardHtml = activityCardHtml.replace("[Mood]", businessData.Mood.toLowerCase());
@@ -170,9 +190,9 @@ app.get('/business', async function(req, res, next) {
     res.send(JSON.stringify(businessData));
 });
 
-async function getRandomActivityFromMood(mood) {
+async function getRandomActivityFromMood(mood, oldBusiness) {
     let categories = moodToCategories(mood);
-    let dbBusinesses = await Business.find().where('Type').in(categories).exec(); // get all businesses
+    let dbBusinesses = await Business.find({OrganizationName: {$ne: oldBusiness} }).where('Type').in(categories).exec(); // get all businesses
     let businesses = [];
 
     dbBusinesses.forEach(dbBusiness => {
