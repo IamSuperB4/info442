@@ -5,8 +5,8 @@
 * */
 body{
     /* background-image: linear-gradient(to bottom right, #FFB75E, #f46b45); */
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    background-color: #F4F1DE;
+
 }
 
 /*
@@ -44,7 +44,7 @@ body{
 }
 
 #nav-elements a:hover {
-    color: gold;
+    color:#81B29A;
 }
 
 #nav-elements li {
@@ -67,7 +67,7 @@ body{
 }
 
 .activity-card {
-    background-color: #9794a7;
+    background-color: #81B29A;
     margin: 30px;
     margin-left: 3%;
     margin-right: 3%;
@@ -96,7 +96,7 @@ body{
 }
 
 .mood-card {
-    background-color: #9794a7;
+    background-color: #81B29A;
     margin-top: 20px;
     padding: 20px;
     font-size: 30px;
@@ -108,7 +108,10 @@ body{
 .mood-card > .card-body {
     margin-top: 15px;
     padding: 5px;
+    background-color: #F4F1DE
 }
+
+
 
 /*
  *
@@ -117,9 +120,15 @@ body{
  *
  *
  */
- #choose-number-of-activities, #choose-mood{
-     color: white;
+ h1{
+    font-family: 'Bungee Shade';font-size: 32px;
+     color:#3D405B;
  }
+ h2{
+    font-family: 'Barlow Semi Condensed';font-size: 22px;
+     color:#3D405B;
+ }
+
 
 .buttons-flex-container {
     display: flex;
@@ -128,17 +137,22 @@ body{
 
 .buttons-flex-container > button {
     border-radius: 30px;
-    background-color: #23da0b;
-    color: black;
-    border: 2px solid #0040ff;
+    background-color: #81B29A;
+    color: #3D405B;
+    border: 2px solid #3D405B;
     padding: 15px 22px;
     margin-bottom: 200px;
+    font-family: 'Barlow Semi Condensed';font-size: 22px;
 }
 
-.buttons-flex-container > button:disabled {
-    background-color: gray; /* button background */
-    border: 2px solid gray;
+h5{
+    font-family: 'Barlow Semi Condensed';font-size: 22px;
+    color:#3D405B; 
 }
+.buttons-flex-container > button:disabled {
+    background-color:#F2CC8F; /* button background */
+    border: 2px solid #F2CC8F;
+}r
 
 .back-button {
     margin-left: 50px;
@@ -181,7 +195,7 @@ body{
 
 .adventure-activity-card-container {
     border-radius: 20px;
-    background-color: #9794a7;
+    background-color: #81B29A;
     width: 65%;
     line-height: 1;
     margin-top: 20px;
@@ -267,7 +281,7 @@ body{
 }
 
 #create-new-adventure-button:hover {
-    background-color: yellow;
+    background-color: #81B29A;
 }
 
 /*
@@ -304,7 +318,7 @@ h2 {
 }
 
 .selected {
-    border: 1px solid #23da0b;
+    border: 1px solid #81B29A;
     border-width: 5px;
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
