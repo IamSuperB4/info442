@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, #fc00ff, #00dbde);
+    background-image: linear-gradient(to bottom right, #81B29A, #F4F1DE);
 }
 
 .Logo img {
@@ -19,13 +19,13 @@ body{
 }
 
 #nav-elements a{
-    color: white;
+    color:#F4F1DE;
     font-size: large;
     font-weight: bold;
 }
 
 #nav-elements a:hover {
-    color: gold;
+    color:#81B29A;
   }
 
 #nav-elements li{
@@ -34,6 +34,7 @@ body{
 }
 
 .our-team h1{
+    color:#81B29A;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -48,11 +49,12 @@ body{
     margin: 1em 2em;
     padding: 1em 1em 1em 1em;
     font-size: 1.5em;
-    background-color: rgba(255, 182, 193, 0.8);
+    background-color: #F4F1DE;
     border-radius: 10px
 }
 
 .project-info h3{
+    color:#81B29A;
     align-self: center;
     font-size: 1.8em;
     font-weight: bolder;
@@ -63,7 +65,7 @@ body{
     padding-bottom: 0.5em;
 }
 .main{
-    background-color: rgba(255, 182, 193, 0.8);
+    background-color:#F4F1DE;
     border-radius: 10px;
     margin: 1em 3em;
     padding: 2em 1em 4em 1em;

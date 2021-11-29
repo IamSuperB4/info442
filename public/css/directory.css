@@ -1,3 +1,22 @@
+.explore-categories{
+
+<<<<<<< HEAD
+  font-family: 'Alfa Slab One';font-size: 42px;
+=======
+  font-family: 'Bungee Shade';font-size: 42px;
+>>>>>>> ad80c2931e3f19043b972b816080539439437f27
+  color: #3D405B;
+}
+
+button {
+ 
+<<<<<<< HEAD
+  font-family: 'Alfa Slab One';font-size: 42px;
+=======
+  font-family: 'Bungee Shade';font-size: 42px;
+>>>>>>> ad80c2931e3f19043b972b816080539439437f27
+  color: #3D405B;
+}
 .Logo img {
   margin-left: 1em;
   margin-top: 1em; 
@@ -7,6 +26,9 @@
   max-width: 250px;
 }
 
+body{
+  
+}
 .nav-bar {
   z-index: 2;
   display: flex;
@@ -26,7 +48,7 @@
 }
 
 #nav-elements a:hover {
-  color: gold;
+  color:#81B29A;
 }
 
 #nav-elements li {
@@ -35,8 +57,9 @@
 
 
 .collapsible {
-  background-color: #FF6961;
-  color: white;
+  font-family: 'Barlow Semi Condensed';font-size: 22px;
+  background-color: #E07A5F;
+  color: #F4F1DE;
   cursor: pointer;
   padding: 10px;
   border: none;
@@ -47,25 +70,25 @@
 }
 
 .collapsible:nth-of-type(odd) {
-  background-color: #78A2cc
+  background-color: #3D405B
 }
 
 .collapsible.active, .collapsible:hover {
-  background-color: #90EE90;
+  background-color: #81B29A;
 }
 
 .content {
   padding: 10px 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #F4F1DE;
   border-style: solid;
-  border-color: green;
+  border-color: #F4F1DE;
 }
 
 .content > div:not(:last-child) {
   border-bottom-style: solid;
-  border-color: black;
+  border-color:#3D405B;
 }
 
 .collapsible, .content {
