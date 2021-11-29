@@ -149,10 +149,12 @@ function goToFinalAdventure(moods) {
 function refreshRandomActivity(element) {
     let mood = element.id;
     let parent = element.parentNode;
+    let oldBusiness = parent.getElementsByClassName('business-name')[0].textContent;
+    console.log(oldBusiness)
     let cardContainerDiv = parent.parentNode;
     let indexOfElement =[].indexOf.call(document.getElementsByClassName('adventure-activity-card-container'), parent);
 
-    fetch("/newadventurecard?mood=" + mood)
+    fetch("/newadventurecard?mood=" + mood + "&oldBusiness=" + oldBusiness)
         .then(response => response.text())
         .then(function(responseText) {
             let newAdventureCard = document.createElement('div');
