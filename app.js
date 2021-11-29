@@ -145,7 +145,7 @@ async function main() {
 app.get('/allbusinesses', async function(req, res, next) {
     res.type('json');
 
-    let dbBusinesses = await Business.find(); // get all businesses
+    let dbBusinesses = await Business.find().sort({ OrganizationName : 1 }); // get all businesses
 
     res.send(JSON.stringify(dbBusinesses));
 });
@@ -155,41 +155,35 @@ app.get('/business', async function(req, res, next) {
 
     let businessName = req.query.businessname;
 
-    let dbBusinesses = await Business.find(); // get all businesses
+    let dbBusiness = await Business.find({OrganizationName : businessName}).exec(); // get all businesses
 
     let businessData = {};
 
-    dbBusinesses.forEach(dbBusiness => {
-        if(dbBusiness.OrganizationName == businessName) {
-            businessData.OrganizationName = dbBusiness.OrganizationName;
-            businessData.Address = dbBusiness.Address;
-            businessData.Phone = dbBusiness.Phone;
-            businessData.Type = dbBusiness.Type;
-            businessData.Category = dbBusiness.Category;
-        }
-    });
+    businessData.OrganizationName = dbBusiness.OrganizationName;
+    businessData.Address = dbBusiness.Address;
+    businessData.Phone = dbBusiness.Phone;
+    businessData.Type = dbBusiness.Type;
+    businessData.Category = dbBusiness.Category;
 
     res.send(JSON.stringify(businessData));
 });
 
 async function getRandomActivityFromMood(mood) {
-    let dbBusinesses = await Business.find(); // get all businesses
+    let categories = moodToCategories(mood);
+    let dbBusinesses = await Business.find().where('Type').in(categories).exec(); // get all businesses
     let businesses = [];
 
     dbBusinesses.forEach(dbBusiness => {
         let businessData = {};
-        let categories = moodToCategories(mood);
 
-        if(categories.includes(dbBusiness.Type.trim())) {
-            businessData.OrganizationName = dbBusiness.OrganizationName.trim();
-            businessData.Address = dbBusiness.Address.trim();
-            businessData.Phone = dbBusiness.Phone.trim();
-            businessData.Type = dbBusiness.Type.trim();
-            businessData.Category = dbBusiness.Category.trim();
-            businessData.Mood = mood;
+        businessData.OrganizationName = dbBusiness.OrganizationName.trim();
+        businessData.Address = dbBusiness.Address.trim();
+        businessData.Phone = dbBusiness.Phone.trim();
+        businessData.Type = dbBusiness.Type.trim();
+        businessData.Category = dbBusiness.Category.trim();
+        businessData.Mood = mood;
 
-            businesses.push(businessData);
-        }
+        businesses.push(businessData);
     });
 
     let business = JSON.stringify(
