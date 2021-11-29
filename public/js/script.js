@@ -150,12 +150,24 @@ function refreshRandomActivity(element) {
     let mood = element.id;
     let parent = element.parentNode;
     let cardContainerDiv = parent.parentNode;
-    parent.remove();
+    let indexOfElement =[].indexOf.call(document.getElementsByClassName('adventure-activity-card-container'), parent);
 
     fetch("/newadventurecard?mood=" + mood)
         .then(response => response.text())
         .then(function(responseText) {
-            cardContainerDiv.innerHTML += responseText;
+            let newAdventureCard = document.createElement('div');
+            newAdventureCard.classList.add("adventure-activity-card-container");
+            newAdventureCard.innerHTML = responseText;
+            parent.remove();
+
+            if(indexOfElement < numberOfActivities - 1) {
+
+                let beforeElement = document.getElementsByClassName('adventure-activity-card-container')[indexOfElement];
+                cardContainerDiv.insertBefore(newAdventureCard, beforeElement)
+            }
+            else {
+                cardContainerDiv.appendChild(newAdventureCard);
+            }
         })
         .catch(function(error) {
             console.log("Error");

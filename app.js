@@ -85,7 +85,9 @@ app.get('/adventure', async function(req, res, next) {
 
   for(const mood of moods) {
     let cardHtml = await createCard(mood);
-    htmlContents += cardHtml;
+    htmlContents += ` <div class="adventure-activity-card-container">
+    ${cardHtml}
+    </div>`;
   }
 
   htmlContents += `</div>
