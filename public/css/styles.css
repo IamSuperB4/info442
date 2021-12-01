@@ -33,7 +33,10 @@ body{
     padding-bottom: 0.6em;
     position: fixed;
     width: 100%;
-    /* background: gray; */
+    color: #de7a5f;
+    background-color: #F4F1DE;
+    border-bottom: 4px solid #bfb3a1
+    /* background: red; */
 }
 
 #nav-elements a {
@@ -150,8 +153,8 @@ h5{
     color:#3D405B; 
 }
 .buttons-flex-container > button:disabled {
-    background-color:#F2CC8F; /* button background */
-    border: 2px solid #F2CC8F;
+    background-color:#808080; /* button background */
+ 
 }r
 
 .back-button {
@@ -227,9 +230,6 @@ h5{
     max-width: 80%;
     max-height: 80%;
     border-radius: 20px;
-}
-
-.adventure-activity-info {
 }
 
 .business-name {
@@ -321,6 +321,7 @@ h2 {
     border: 1px solid #E07A5F;
     border-width: 5px;
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
 .disable-div {
