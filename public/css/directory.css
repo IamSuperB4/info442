@@ -18,10 +18,6 @@ button {
   max-width: 250px;
 }
 
-body{
-  
-}
-
 .nav-bar {
   z-index: 2;
   display: flex;
@@ -30,11 +26,11 @@ body{
   padding-bottom: 0.6em;
   position: fixed;
   width: 100%;
-  background: gray;
+  background-color: #F4F1DE;
 }
 
 #nav-elements a {
-  color: white;
+  color: black;
   font-size: large;
   font-weight: bold;
   float: right;

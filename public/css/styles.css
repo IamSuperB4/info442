@@ -212,6 +212,7 @@ h5{
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
+    title
 }
 
 .adventure-activity-card {
