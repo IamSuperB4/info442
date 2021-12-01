@@ -37,7 +37,7 @@ body{
 }
 
 #nav-elements a {
-    color: white;
+    color: black;
     font-size: large;
     font-weight: bold;
     float: right;
@@ -318,7 +318,7 @@ h2 {
 }
 
 .selected {
-    border: 1px solid #81B29A;
+    border: 1px solid #E07A5F;
     border-width: 5px;
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
