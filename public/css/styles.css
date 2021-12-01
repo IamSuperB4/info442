@@ -212,6 +212,7 @@ h5{
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
+    title
 }
 
 .adventure-activity-card {
@@ -318,7 +319,7 @@ h2 {
 }
 
 .selected {
-    border: 1px solid blue;
+    border: 1px solid #E07A5F;
     border-width: 5px;
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
     
