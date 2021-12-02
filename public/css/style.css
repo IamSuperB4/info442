@@ -62,14 +62,9 @@ body {
 }
 
 #explore-campus-text {
-<<<<<<< HEAD
-  font-family: 'Alfa Slab One';font-size: 42px;
-=======
->>>>>>> ad80c2931e3f19043b972b816080539439437f27
- 
-  background-image: url(https://media.giphy.com/media/ToMjGpjm9vQhsB4cqVa/giphy.gif
-  
-  );
+  font-family: 'Alfa Slab One';
+  font-size: 42px;
+  background-image: url(https://media.giphy.com/media/ToMjGpjm9vQhsB4cqVa/giphy.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
@@ -119,4 +114,29 @@ body {
 
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/uw-aerial-img.jpeg");
+}
+
+/*
+ *
+ *
+    Mobile view
+ *
+ *
+ */
+
+ @media screen and (max-width: 640px) {
+  body{
+    /* background-image: linear-gradient(to bottom right, #fc00ff, #00dbde); */
+    margin-left: auto;
+    background-color: darkgray;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .home-text {
+    font-size: 0.6em;
+    /* margin: 0.3rem; */
+    margin-left: 1em;
+    padding-left: 1em;
+  }
 }
