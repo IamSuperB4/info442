@@ -261,7 +261,6 @@ h5{
     left: 15%;
 }
 
-
 #create-new-adventure-button {
     background-color: #ddd;
     border: none;
@@ -327,4 +326,22 @@ h2 {
 
 .disable-div {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 640px) {
+    #choose-number-of-activities, #choose-mood, #the-adventure {
+        padding-top: 1.5em;
+    }
+
+    .next-button {
+        margin-right: 1em;
+    }
+
+    .back-button {
+        margin-left: 1em;
+    }
+
+    /* #loading-page > img {
+        max-width: 100%;
+    } */
 }
