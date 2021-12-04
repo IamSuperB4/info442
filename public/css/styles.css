@@ -212,18 +212,19 @@ h5{
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
-    title
 }
 
 .adventure-activity-card {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
 }
 
 .adventure-activity-image {
-    width: auto;
+    grid-column-start: 1;
+    grid-row-start: row1-start;
+    grid-row-end: row3-end;
 }
 
 .adventure-activity-image > img {
@@ -233,17 +234,27 @@ h5{
     border-radius: 20px;
 }
 
+.adventure-activity-info {
+    grid-column-start: 2;
+    grid-row-start: row1-start;
+    grid-row-end: row3-end;
+}
+
 .business-name {
     font-size: 28px;
-    text-align: left;
+    text-align: center;
+    
 }
 
 .phone-number, .address {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .adventure-google-maps {
+    grid-column-start: 3;
+    grid-row-start: row1-start;
+    grid-row-end: row3-end;
     cursor: pointer;
     background-image: url("https://www.google.com/images/branding/product/2x/maps_96in128dp.png");
     height: 150px;
