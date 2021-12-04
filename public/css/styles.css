@@ -123,15 +123,17 @@ body{
  *
  *
  */
- h1{
-    font-family: 'Bungee Shade';font-size: 32px;
-     color:#3D405B;
- }
- h2{
-    font-family: 'Barlow Semi Condensed';font-size: 22px;
-     color:#3D405B;
+ h1 {
+    font-family: 'Barlow Semi Condensed';
+    font-size: 4em;
+    color:#3D405B;
  }
 
+ h2 {
+    font-family: 'Barlow Semi Condensed';
+    font-size: 2em;
+    color:#3D405B;
+ }
 
 .buttons-flex-container {
     display: flex;
