@@ -19,13 +19,13 @@ body{
 }
 
 #nav-elements a{
-    color:#F4F1DE;
+    color: black;
     font-size: large;
     font-weight: bold;
 }
 
 #nav-elements a:hover {
-    color:#81B29A;
+    color: #3D405B;
   }
 
 #nav-elements li{
