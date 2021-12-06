@@ -4,7 +4,6 @@
 *
 * */
 body{
-    /* background-image: linear-gradient(to bottom right, #FFB75E, #f46b45); */
     background-color: #F4F1DE;
 
 }
@@ -16,43 +15,38 @@ body{
  *
  *
  */
+
 .Logo img {
     margin-left: 1em;
     margin-top: 1em; 
     height: auto;
     width: auto;
-    max-height: 40px;
+    max-height: 72px;
     max-width: 250px;
 }
 
 .nav-bar {
-    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 0.6em;
-    position: fixed;
-    width: 100%;
-    color: #de7a5f;
-    background-color: #F4F1DE;
-    border-bottom: 4px solid #bfb3a1
-    /* background: red; */
-}
-
-#nav-elements a {
-    color: black;
+    background-color: #F4F1DE
+  }
+  
+  #nav-elements a {
+    color: #3D405B;
     font-size: large;
     font-weight: bold;
-    float: right;
-}
-
-#nav-elements a:hover {
-    color:#81B29A;
-}
-
-#nav-elements li {
+  }
+  
+  #nav-elements a:hover {
+    color: #81B29A;
+  }
+  
+  #nav-elements li {
+    padding: 1.5em;
     margin-right: 0.5em;
-}
+  }
 
 /*
  *
@@ -113,8 +107,6 @@ body{
     padding: 5px;
     background-color: #F4F1DE
 }
-
-
 
 /*
  *
@@ -305,7 +297,7 @@ h5{
  *
  */
 h1 {
-    padding-top: 72px;
+    padding-top: 0.5em;
     text-align: center;
 }
 
@@ -341,6 +333,14 @@ h2 {
     opacity: 0.5;
 }
 
+.back-button {
+    margin-left: 1em;
+}
+
+.next-button {
+    margin-right: 1em;
+}
+
 @media screen and (max-width: 640px) {
     #choose-number-of-activities, #choose-mood, #the-adventure {
         padding-top: 1.5em;
@@ -353,8 +353,4 @@ h2 {
     .back-button {
         margin-left: 1em;
     }
-
-    /* #loading-page > img {
-        max-width: 100%;
-    } */
 }

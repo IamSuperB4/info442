@@ -1,49 +1,44 @@
 .explore-categories{
-
   font-family: 'Alfa Slab One';font-size: 42px;
   color: #3D405B;
 }
 
 button {
- 
   font-family: 'Alfa Slab One';font-size: 42px;
   color: #3D405B;
 }
+
 .Logo img {
   margin-left: 1em;
   margin-top: 1em; 
   height: auto;
   width: auto;
-  max-height: 40px;
+  max-height: 72px;
   max-width: 250px;
 }
 
 .nav-bar {
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.6em;
-  position: fixed;
-  width: 100%;
-  background-color: #F4F1DE;
+  background-color: #F4F1DE
 }
 
 #nav-elements a {
-  color: black;
+  color: #3D405B;
   font-size: large;
   font-weight: bold;
-  float: right;
 }
 
 #nav-elements a:hover {
-  color:#81B29A;
+  color: #81B29A;
 }
 
 #nav-elements li {
+  padding: 1.5em;
   margin-right: 0.5em;
 }
-
 
 .collapsible {
   font-family: 'Barlow Semi Condensed';font-size: 22px;

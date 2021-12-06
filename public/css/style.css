@@ -43,8 +43,6 @@
     font-weight: bold;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
   background-color: #111;
@@ -127,7 +125,6 @@ body {
 
  @media screen and (max-width: 640px) {
   body{
-    /* background-image: linear-gradient(to bottom right, #fc00ff, #00dbde); */
     margin-left: auto;
     background-color: darkgray;
     overflow-x: hidden;
@@ -136,7 +133,6 @@ body {
 
   .home-text {
     font-size: 0.6em;
-    /* margin: 0.3rem; */
     margin-left: 1em;
     padding-left: 1em;
   }
