@@ -13,16 +13,21 @@ button {
   margin-top: 1em; 
   height: auto;
   width: auto;
-  max-height: 72px;
+  max-height: 36px;
   max-width: 250px;
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.6em;
-  background-color: #F4F1DE
+  padding-bottom: 0.3em;
+  background-color: #F4F1DE;
+  width: 100%;
+  border-bottom: 3px solid black;
+  z-index: 4;
 }
 
 #nav-elements a {
@@ -36,7 +41,8 @@ button {
 }
 
 #nav-elements li {
-  padding: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   margin-right: 0.5em;
 }
 
